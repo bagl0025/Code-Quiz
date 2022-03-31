@@ -24,5 +24,5 @@ After clicking start the timer will begin. As you select answers you will get im
 
 ## Author
 Brian Bagley
-​
+
 April 2022
