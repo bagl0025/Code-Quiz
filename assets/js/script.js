@@ -6,8 +6,8 @@ var questions = ["Inside which HTML element do we put the JavaScript?",
 "How can you add a comment in a JavaScript?",
 "How do you find the number with the highest value of x and y?",
 "How do you round the number 7.25, to the nearest integer?",
-"How does a FOR loop start?",
-"How does a WHILE loop start?"];
+"How does a WHILE loop start?",
+"How does a FOR loop start?"];
 
 var choices = [["<scripting>", "<js>", "<script>", "<javascript>", "<main>"],
 ["<script src='script.js'>", "<script href='script.js'>", "<script name='script.js'>", "<script loc='script.js'>"],
