@@ -1,0 +1,64 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.btn {
+  margin: 20px;
+}
+
+.btn-primary {
+  background-color: purple;
+  color: white;
+  border-radius: 5px;
+  border-color: purple;
+}
+
+.btn:hover {
+  background-color: purple;
+  background-color: violet;
+}
+
+/* alignment for scores and timer */
+.lText {
+  text-align: center;
+  color: purple;
+}
+
+.rText {
+  text-align: center;
+  color: black;
+}
+
+/* wrong/correct popup */
+#answer {
+  text-align: center;
+  font-size: 25px;
+  color: gray;
+}
+
+/* info collected in the inout box */
+.hs_info {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 20px;
+}
+
+/* high score list style */
+.hsList {
+  background-color: violet;
+  opacity: .8;
+  margin: 10px;
+  text-align: left;
+}
+
+ol {
+  width: 50%;
+  margin: auto;
+  padding: 0px;
+}
+
+#viewHighScores:hover {
+  color: black;
+  cursor: pointer;
+}
