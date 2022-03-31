@@ -39,7 +39,7 @@ else {
     // new scores will initially be added to bottom of the list
     // but then sorted on reload
     scores.sort(function(a, b) {
-        return a[1] - b[1];
+        return b[1] -a[1];
     });
 }
 
@@ -94,7 +94,7 @@ $("#start").on("click", function() {
             $("#intro").remove();
             $("#start").remove();
             for (var i = 0; i < 4; i++) {
-                $("#wrapper").append("<button type='button' id='btn-select" + i + "'" + "class='btn btn-primary btn-lg d-grid col-lg-8 col-md-6' col-sm-4></button>");
+                $("#wrapper").append("<button type='button' id='btn-select" + i + "'" + "class='btn btn-primary btn-lg d-flex col-12'></button>");
             }
             populateList();
         }
@@ -118,7 +118,11 @@ $("#start").on("click", function() {
         $("[id*='btn-select']").remove();
         $("h1").after("<p></p>");
         $("p").text("Your final score is " + timer + ".")
-        $("#wrapper").append("Enter initials: ", "<input type='text' id='inits' class='hs_info' placeholder='Enter your initials'> </input>", "<button type='button' id='btn-submit' class='btn btn-primary btn-md hs_info'>Submit</button>");
+        // $("#wrapper").append("Enter initials: ", "<input type='text' id='inits' class='hs_info' placeholder='Enter your initials'> </input>", "<button type='button' id='btn-submit' class='btn btn-primary btn-md hs_info'>Submit</button>");
+        $("#wrapper").append("<div id='hs_info'></div>");
+        $("#hs_info").append("Enter Initials: ", "<input type='text' id='inits' placeholder='Enter your initials'> </input>");
+        $("#hs_info").append("<button type='button' id='btn-submit' class='btn btn-primary btn-md'>Submit</button>");
+
         $("#answer").text(""); 
     };
 });
@@ -126,6 +130,7 @@ $("#start").on("click", function() {
 // display and save high scores
 function highScores() {
     $("#wrapper").remove();
+    $("#start").remove();
     $("h1").text("High scores");
     $("h1").append("<ol></ol>");
 
