@@ -7,7 +7,7 @@
 ![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
 ---
 
-Code-Quiz ia a 10 question Javascript quiz to test your skills. You have 10 minutes ot complete the quiz and any wrong answers will deduct 10 seconds from your time (score).
+Code-Quiz ia a 10 question Javascript quiz to test your skills. You have 10 minutes to complete the quiz and any wrong answers will deduct 10 seconds from your time (score).
 ​
 ## User Interface
 <img src="./assets/images/codequiz.png" alt="Code-Quiz start screen" width="800"/>
