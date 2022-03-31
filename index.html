@@ -10,28 +10,36 @@
 </head>
 
 <body>
+    <!-- header section - done -->
     <header class="row">
-        <div class="col-lg-2 lText" id="viewHighScores">View High Scores</div>
-        <div class="col-lg-8"></div>
-        <div class="col-lg-2 rText">Time: 0</div>
+        <div class="col-lg-3 lText" id="viewHighScores">View High Scores</div>
+        <div class="col-lg-6"></div>
+        <div class="col-lg-3 rText">Time: 0</div>
     </header>
     <main>
-        <div class="display-5 px-3 py-4 my-3 text-center">
-            <h1 class="text-center fw-bold">Coding Quiz Challenge</h2>
-            <div class="col-lg-8 col-md-6 col-sm-4 mx-auto" id="wrapper">
-            <p class="lead mb-4" id="intro">Try to answer the following code-related questions within the time limit. 
-                Keeping mind that incorrect answers will penalize your score by ten seconds!</p>
-            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                <button type="button" id="start" class="btn btn-primary btn-lg px-4 gap-3">Start Quiz</button>
+        <!-- main container -->
+        <div class="text-center">
+            <h1>Coding Quiz Challenge</h1>
+            <!-- button wrapper -->
             </div>
+                <div class="row justify-content-center">
+                <div id="wrapper" class="text-center justify-content-center">
+                    <p id="intro" class="lead mb-3 col-lg-8 mx-auto">Try to answer the following code-related questions within the time limit. 
+                        Keeping mind that incorrect answers will penalize your score by ten seconds!</p>
+                </div>
+            </div>
+            <!-- lower button -->
+            <div class="row d-md-flex justify-content-center"> 
+                <button type="button" id="start" class="btn btn-primary btn-lg">Start Quiz</button>
             </div>
         </div>
+    
+        <!-- answer section -->
         <div class="text-center">
             <hr id='hrrule' style='height:3px;margin:auto;color:gray;background-color:gray;width:50%'>
         </div>
         <div id="answer"></div>
     </main>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="./assets/js/script.js"></script> 
