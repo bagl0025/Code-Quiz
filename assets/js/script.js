@@ -146,7 +146,7 @@ function highScores() {
 };
 
 // go back to home
-$(document).on("click", "#btn-goback", function () {
+$(document).on("click", "#btn-goBack", function () {
     window.location.reload();
 });
 
