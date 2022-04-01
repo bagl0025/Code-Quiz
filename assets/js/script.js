@@ -137,8 +137,8 @@ function highScores() {
     for (var i = 0; i < scores.length; i++) {
         $("ol").append("<li class='hsList'>" + scores[i].join("  --  ") + "</li>");
     }
-    $("#hrrule").before("<button type='button' id='btn-goback' class='btn btn-primary btn-lg px-4 gap-3'>Go Back</button>");
-    $("#hrrule").before("<button type='button' id='btn-clearScores' class='btn btn-primary btn-lg px-4 gap-3'>Clear High Scores</button>");
+    $("#hrrule").before("<button type='button' id='btn-goBack' class='btn btn-primary btn-lg'>Go Back</button>");
+    $("#hrrule").before("<button type='button' id='btn-clearScores' class='btn btn-primary btn-lg'>Clear High Scores</button>");
     $("#btn-submit").remove();
     $("p").text("");
 

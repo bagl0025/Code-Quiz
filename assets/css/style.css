@@ -4,7 +4,6 @@
 }
 
 .btn {
-  margin: 20px;
   justify-content: center;
 }
 
@@ -13,11 +12,16 @@
   color: white;
   border-radius: 5px;
   border-color: purple;
-}
+  margin-bottom: 10px;
+  ;}
 
 .btn:hover {
   background-color: purple;
   background-color: violet;
+}
+
+#btn-goBack, #btn-clearScores, #btn-submit {
+  margin: 10px;
 }
 
 /* alignment for scores and timer */
